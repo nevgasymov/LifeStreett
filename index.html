@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+	<title>LifeStreet</title>
+	<link rel="stylesheet" href="css/all.css" type="text/css" media="all">
+</head>
+<body>
+	<section class="popup">
+		<form class="form" action="#">
+			<fieldset>
+				<div class="title-holder">
+					<strong class="title">Test Settings</strong>
+					<a class="close-btn" href="#">close</a>
+				</div>
+				<div class="open-close opened">
+					<div class="subtitle-holder">
+						<strong class="sub-title">Test Properties</strong>
+					</div>
+					<div class="row">
+						<div class="col col-13">
+							<label for="name">Test Name:</label>
+							<input id="name" placeholder="Test Name Example" type="text">
+						</div>
+						<div class="col col-23">
+							<label for="desc">Descriprion:</label>
+							<input id="desc" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" type="text">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-13">
+							<label for="concept">Test concept:</label>
+							<div class="select">
+								<select id="concept">
+									<option>Single-Variable</option>
+								</select>
+							</div>
+						</div>
+						<div class="col col-13">
+							<label for="element">Test element:</label>
+							<div class="select">
+								<select id="element">
+									<option>Single-Variable</option>
+								</select>
+							</div>
+						</div>
+						<div class="col col-13">
+							<label for="adjustment">Test Adjustment:</label>
+							<div class="select">
+								<select id="adjustment">
+									<option>Single-Variable</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="open-close opened">
+					<div class="subtitle-holder">
+						<strong class="sub-title">Auto Remove Losing Ads</strong>
+						<div class="switcher">
+							<input type="checkbox" id="switcher-ads">
+							<label for="switcher-ads">
+								<i></i>
+							</label>
+						</div>
+					</div>
+					<p>Minimum requirements before auto-removing an ad:</p>
+					<div class="row alt">
+						<div class="col">
+							<div class="select">
+								<select id="confidence">
+									<option>85%</option>
+									<option>90%</option>
+									<option>95%</option>
+								</select>
+							</div>
+							<label for="confidence">confidence of loss vs.</label>
+							<div class="select">
+								<select>
+									<option>winning ad</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row alt">
+						<div class="col">
+							<div class="select">
+								<select id="conversions">
+									<option>5</option>
+									<option>10</option>
+									<option>20</option>
+								</select>
+							</div>
+							<label for="confidence">conversions for</label>
+							<div class="select">
+								<select>
+									<option>winning ad</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="open-close opened">
+					<div class="subtitle-holder">
+						<strong class="sub-title">Weights &amp; Control</strong>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th class="fix-col">Control Ad</th>
+								<th class="fix-col">
+									<span class="checkbox-text">
+										<input type="checkbox" id="ad-weight">
+										<label for="ad-weight">Ad Weight</label>
+									</span>
+								</th>
+								<th class="fix-col">Traffic Percent</th>
+								<th>Ad Name</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-title="Control Ad">
+									<span class="custom-check">
+										<input type="checkbox" id="control-ad">
+										<label for="control-ad">label text</label>
+									</span>
+								</td>
+								<td data-title="Ad Weight" class="weight">
+									<input value="100" type="number">
+								</td>
+								<td data-title="Traffic Percent">25%</td>
+								<td data-title="Ad Name" class="ads">
+									<p>Big Fish Games English - static chips</p>
+									<div class="ads-holder">
+										<img src="images/img01.jpg" alt="image description">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Control Ad">
+									<span class="custom-check">
+										<input type="checkbox" id="control-ad2">
+										<label for="control-ad2">label text</label>
+									</span>
+								</td>
+								<td data-title="Ad Weight" class="weight">
+									<input value="100" type="number">
+								</td>
+								<td data-title="Traffic Percent">25%</td>
+								<td data-title="Ad Name" class="ads">
+									<p>Big Fish Games English - logo</p>
+									<div class="ads-holder">
+										<img src="images/img02.jpg" alt="image description">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Control Ad">
+									<span class="custom-check">
+										<input type="checkbox" id="control-ad3">
+										<label for="control-ad3">label text</label>
+									</span>
+								</td>
+								<td data-title="Ad Weight" class="weight">
+									<input value="100" type="number">
+								</td>
+								<td data-title="Traffic Percent">25%</td>
+								<td data-title="Ad Name" class="ads">
+									<p>Big Fish Games English - Cartoon girl</p>
+									<div class="ads-holder">
+										<img src="images/img03.jpg" alt="image description">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Control Ad">
+									<span class="custom-check">
+										<input type="checkbox" id="control-ad4">
+										<label for="control-ad4">label text</label>
+									</span>
+								</td>
+								<td data-title="Ad Weight" class="weight">
+									<input value="100" type="number">
+								</td>
+								<td data-title="Traffic Percent">25%</td>
+								<td data-title="Ad Name" class="ads">
+									<p>Big Fish Games English - #1 Casino</p>
+									<div class="ads-holder">
+										<img src="images/img04.jpg" alt="image description">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn-holder warning">
+					<span class="error-text">You must confirm the changes by selecting "Save"</span>
+					<input value="save" class="btn" type="submit">
+					<a class="btn" href="#">Cancel</a>
+				</div>
+			</fieldset>
+		</form>
+	</section>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.main.js"></script>
+</body>
+</html>
